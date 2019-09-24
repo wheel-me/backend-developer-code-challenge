@@ -1,7 +1,7 @@
 # Backend developer: python code challenge
 The purpose of this coding challenge is to see your coding style and level.
 We are a small team, and we need developers/architects who can write and understand code.
-Please don't feel intimidated if you don't know Kafka. You only need to be able to use, not be an expert.
+Please don't feel intimidated if you don't know Kafka. You only need to be able to use Kafka, not be an expert.
 
 You must write the code yourself, and you will be asked to explain it. 
 
