@@ -2,7 +2,7 @@
 The purpose of this coding challenge is to see your coding style and level.
 
 ## API-routes
-Use a python-web framework (we recommend flask, but you are free to choose whatever) to write an API.
+Use python (3.6 or later) and a web-framework (we recommend flask, but you are free to choose whatever framework you like) to write a REST-API.
 The API should handle the following two routes:
 
 1. GET to `/` should return "Ok"
