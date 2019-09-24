@@ -6,7 +6,7 @@ Use python (3.6 or later) and a web-framework (we recommend flask, but you are f
 The API should handle the following two routes:
 
 1. GET to `/` should return "Ok"
-2. POST to `/kafka` should receive a JSON payload (see example below). It must check that *username* is in the payload and that *username* is a string. Then it should publish a kafka message with the username as the key and the rest of the payload as the value to a kafka-topic.
+2. POST to `/kafka` should receive a JSON payload (see example below). It must check that *username* is in the payload and that *username* is a string. Then it should publish a [kafka message](#kafka-message)
 
 **Example valid json payload, notice that no other field than username is required**:
 
@@ -34,6 +34,11 @@ The API should handle the following two routes:
 }
 ```
 
+### Kafka message
+The kafka message should have:
+1. A key that is the username of the payload.
+2. A value that is all the other fields of the payload.
+3. The value should also contain a *timestamp* field which should be the timestamp when receiving the message
 
 ## Other requirements
 1. The API should be runnable with docker-compose.
@@ -51,5 +56,3 @@ Extra credits if:
 ## Hints
 * Checkout `landoop/fast-data-dev:cp3.3.0` for running kafka with docker.
 * Checkout [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) for a python client for kafka
-
-
