@@ -61,4 +61,7 @@ Extra credits if:
 * Checkout `landoop/fast-data-dev:cp3.3.0` for running kafka with docker.
 * Checkout [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) for a python client for kafka
 
+## Submission alternatives
+1. Create a repository on Github and send us the link
+2. Zip the project files and send them over email
 
